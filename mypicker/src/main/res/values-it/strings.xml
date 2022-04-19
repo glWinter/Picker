@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">dialog-picker</string>
+	<string name="done">Fatto</string>
+	<string name="fragment_settings_hi_bg_threshold">Hi BG Threshold</string>
+	<string name="fragment_settings_lo_bg_threshold">Lo BG Threshold</string>
+	<string name="next">Succ</string>
+	<string name="prev">Prec</string>
+	<string name="time_date_picker_title">Data</string>
+	<string name="timepicker_cancel">Annulla</string>
+	<string name="timepicker_day">g</string>
+	<string name="timepicker_finish">OK</string>
+	<string name="timepicker_hour">ore</string>
+	<string name="timepicker_min">min</string>
+	<string name="timepicker_month">mese</string>
+	<string name="timepicker_title">Ora</string>
+	<string name="timepicker_title_default">impostato</string>
+	<string name="timepicker_year">anno</string>
+	<string name="timezonepicker_title">Fuso orario</string>
+</resources>

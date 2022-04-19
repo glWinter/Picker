@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<color name="green">#ff38c978</color>
+	<color name="yellow">#ffffa800</color>
+	<color name="red">#ffe84c3d</color>
+	<color name="blue">#ff157efb</color>
+	<color name="background_light">#ff42475b</color>
+	<color name="background_dark">#ff333645</color>
+	<color name="background_black">#ff1e1f28</color>
+	<color name="background_loading">#bf000000</color>
+	<color name="text_light">#ffc9c9c9</color>
+	<color name="text_dark">#ff333645</color>
+	<color name="text_white">#ffffffff</color>
+	<color name="text_black">#ff444444</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="transparent70">#b3000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff404040</color>
+    <color name="dialog_title">#ff000000</color>
+    <color name="home_btn_enable">#ffd8d8d8</color>
+    <color name="gray_deep">#ff666666</color>
+    <color name="gray_light">#ff8f8f8f</color>
+    <color name="status_green">#ffb0ff00</color>
+    <color name="status_blue">#ff00fdff</color>
+    <color name="orange">#ffff6600</color>
+    <color name="green_dark">#ff2c8586</color>
+    <color name="green_light">#ff2ec5c6</color>
+    <color name="home_text_blue">#ff6df0f0</color>
+    <color name="home_text_green">#ffbbde6d</color>
+    <color name="bolus_text_green">#ff45ab45</color>
+    <color name="bolus_text_grey">#ff8f8f8f</color>
+    <color name="setting_text_grey">#ff6f6f6f</color>
+    <color name="setting_text_blue">#ff00ade7</color>
+    <color name="setting_clock_blue">#ff15a6d3</color>
+    <color name="setting_clock_grey">#fff6f8f7</color>
+    <color name="setting_text_purple">#ff2d4582</color>
+    <color name="action_text_orange">#ffd48812</color>
+    
+    <color name="history_content">#ff2d6dae</color>
+    <color name="history_bg">#ff2c8888</color>
+    <color name="history_carbs">#ff22a922</color>
+    <color name="history_insulin">#ff2c68fe</color>
+    <color name="history_alarm">#ffa24fdc</color>
+    
+    <color name="food_blue">#ff00ade7</color>
+    
+   	<color name="basal_color1">#ff00e100</color>
+   	<color name="basal_color2">#ff00c300</color>
+   	<color name="basal_color3">#ff00b900</color>
+   	<color name="basal_color4">#ff00af00</color>
+   	<color name="basal_color5">#ff00a500</color>
+   	<color name="basal_color6">#ff009b00</color>
+   	<color name="basal_color7">#ff009100</color>
+   	<color name="basal_color8">#ff008700</color>
+   	<color name="basal_color9">#ff007d00</color>
+   	<color name="basal_color10">#ff007300</color>
+   	<color name="basal_color11">#ff006900</color>
+   	<color name="basal_color12">#ff005f00</color>
+   	
+   	<color name="basal_color13">#ff009bff</color>
+   	<color name="basal_color14">#ff0091f5</color>
+   	<color name="basal_color15">#ff0087eb</color>
+   	<color name="basal_color16">#ff007de1</color>
+   	<color name="basal_color17">#ff0073d7</color>
+   	<color name="basal_color18">#ff0069cd</color>
+   	<color name="basal_color19">#ff005fc3</color>
+   	<color name="basal_color20">#ff0055b9</color>
+   	<color name="basal_color21">#ff004baf</color>
+   	<color name="basal_color22">#ff0041a5</color>
+   	<color name="basal_color23">#ff00379b</color>
+   	<color name="basal_color24">#ff002d91</color>
+   	
+   	<color name="basal_color25">#ff00ff9b</color>
+   	<color name="basal_color26">#ff00f591</color>
+   	<color name="basal_color27">#ff00eb87</color>
+   	<color name="basal_color28">#ff00e17d</color>
+   	<color name="basal_color29">#ff00d773</color>
+   	<color name="basal_color30">#ff00cd69</color>
+   	<color name="basal_color31">#ff00c35f</color>
+   	<color name="basal_color32">#ff00b955</color>
+   	<color name="basal_color33">#ff00af4b</color>
+   	<color name="basal_color34">#ff00a541</color>
+   	<color name="basal_color35">#ff009b37</color>
+   	<color name="basal_color36">#ff00912d</color>
+   	
+   	<color name="basal_color37">#ffff9b00</color>
+   	<color name="basal_color38">#fff59100</color>
+   	<color name="basal_color39">#ffeb8700</color>
+   	<color name="basal_color40">#ffe17d00</color>
+   	<color name="basal_color41">#ffd77300</color>
+   	<color name="basal_color42">#ffcd6900</color>
+   	<color name="basal_color43">#ffc35f00</color>
+   	<color name="basal_color44">#ffb95500</color>
+   	<color name="basal_color45">#ffaf4b00</color>
+   	<color name="basal_color46">#ffa54100</color>
+   	<color name="basal_color47">#ff9b3700</color>
+   	<color name="basal_color48">#ff912d00</color>
+
+</resources>

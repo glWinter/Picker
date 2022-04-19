@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">dialog-picker</string>
+
+    <string name="timepicker_year">年</string>
+    <string name="timepicker_month">月</string>
+    <string name="timepicker_day">日</string>
+    <string name="timepicker_hour">时</string>
+    <string name="timepicker_min">分</string>
+    <string name="timepicker_title">设置时间</string>
+    <string name="time_date_picker_title">设置日期</string>
+    <string name="timepicker_finish">确认</string>
+    <string name="timepicker_cancel">取消</string>
+    <string name="timepicker_title_default">设置</string>
+    <string name="timezonepicker_title">设置时区</string>
+    <string name="fragment_settings_hi_bg_threshold">高血糖阈值</string>
+    <string name="fragment_settings_lo_bg_threshold">低血糖阈值</string>
+    <string name="next">下一步</string>
+    <string name="prev">上一步</string>
+    <string name="done">完成</string>
+
+    <string-array name="timezone_array">
+        <item>帕果帕果(GMT-11:00)</item>
+        <item>火奴鲁鲁(GMT-10:00)</item>
+        <item>安克雷奇(GMT-09:00)</item>
+        <item>内华达州(GMT-08:00)</item>
+        <item>丹佛(GMT-07:00)</item>
+        <item>芝加哥(GMT-06:00)</item>
+        <item>纽约(GMT-05:00)</item>
+        <item>圣地亚哥(GMT-04:00)</item>
+        <item>圣保罗(GMT-03:00)</item>
+        <item>格陵兰(GMT-02:00)</item>
+        <item>普拉亚(GMT-01:00)</item>
+        <item>伦敦(GMT+00:00)</item>
+        <item>巴黎(GMT+01:00)</item>
+        <item>雅典(GMT+02:00)</item>
+        <item>吉达(GMT+03:00)</item>
+        <item>迪拜(GMT+04:00)</item>
+        <item>卡拉奇(GMT+05:00)</item>
+        <item>达卡(GMT+06:00)</item>
+        <item>曼谷(GMT+07:00)</item>
+        <item>北京(GMT+08:00)</item>
+        <item>东京(GMT+09:00)</item>
+        <item>悉尼(GMT+10:00)</item>
+        <item>努美阿(GMT+11:00)</item>
+        <item>惠灵顿(GMT+12:00)</item>
+    </string-array>
+</resources>
+
