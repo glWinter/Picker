@@ -35,7 +35,7 @@
                 android:layout_width="110dip"
                 android:layout_height="wrap_content">
 
-                <com.microtechmd.pda.picker.LoopView
+                <com.example.liangmutian.mypicker.LoopView
                     android:id="@+id/loop_hour"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
                 android:layout_width="110dip"
                 android:layout_height="wrap_content">
 
-                <com.microtechmd.pda.picker.LoopView
+                <com.example.liangmutian.mypicker.LoopView
                     android:id="@+id/loop_min"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

@@ -31,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
 
-                <com.microtechmd.pda.picker.LoopView
+                <com.example.liangmutian.mypicker.LoopView
                     android:id="@+id/loop_year"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
 
-                <com.microtechmd.pda.picker.LoopView
+                <com.example.liangmutian.mypicker.LoopView
                     android:id="@+id/loop_month"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -101,7 +101,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
 
-                <com.microtechmd.pda.picker.LoopView
+                <com.example.liangmutian.mypicker.LoopView
                     android:id="@+id/loop_day"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
