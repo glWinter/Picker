@@ -1,4 +1,7 @@
 # Picker
+
+[![](https://jitpack.io/v/glWinter/Picker.svg)](https://jitpack.io/#glWinter/Picker)
+
 the pikcer for android 
 
 ```
@@ -12,6 +15,6 @@ allprojects {
 
 ```
 dependencies {
-	        implementation 'com.github.glWinter:Picker:1.0.2'
+	        implementation 'com.github.glWinter:Picker:last-release'
 }
 ```
