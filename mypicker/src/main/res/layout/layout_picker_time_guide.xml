@@ -35,17 +35,18 @@
                 android:layout_width="110dip"
                 android:layout_height="wrap_content">
 
-                <com.example.liangmutian.mypicker.LoopView
+                <com.microtechmd.pda.picker.LoopView
                     android:id="@+id/loop_hour"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
                     android:layout_gravity="center_horizontal" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="40dip"
+                    android:layout_gravity="center_vertical|end"
+
                     android:text="@string/timepicker_hour"
                     android:textColor="#B3B3B3" />
             </FrameLayout>
@@ -54,17 +55,17 @@
                 android:layout_width="110dip"
                 android:layout_height="wrap_content">
 
-                <com.example.liangmutian.mypicker.LoopView
+                <com.microtechmd.pda.picker.LoopView
                     android:id="@+id/loop_min"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
                     android:layout_gravity="center_horizontal" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|end"
-                    android:layout_marginEnd="10dip"
                     android:text="@string/timepicker_min"
                     android:textColor="#B3B3B3" />
             </FrameLayout>
