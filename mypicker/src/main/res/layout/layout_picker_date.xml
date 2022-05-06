@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/background_light"
     android:orientation="vertical">
 
@@ -34,7 +35,7 @@
                     android:id="@+id/loop_year"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="4dp"
+                    android:layout_marginEnd="15dp"
                     android:layout_gravity="center_horizontal" />
 
                 <TextView
@@ -69,13 +70,15 @@
                     android:id="@+id/loop_month"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
                     android:layout_gravity="center_horizontal" />
 
                 <TextView
+                    android:layout_marginStart="20dp"
+                    android:gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginStart="36dip"
                     android:text="@string/timepicker_month"
                     android:textColor="#B3B3B3" />
 
@@ -103,6 +106,7 @@
                     android:id="@+id/loop_day"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
                     android:layout_gravity="center_horizontal" />
 
                 <TextView
