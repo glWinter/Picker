@@ -40,6 +40,13 @@ public class TimezonePickerDialog extends Dialog {
         private String selectValue;
         private final TimezonePickerDialog.Params params;
 
+        private float textSize = 20f;
+
+        public Builder setTextSize(float textSize){
+            this.textSize = textSize;
+            return this;
+        }
+
         public Builder(Context context) {
             this.context = context;
             params = new TimezonePickerDialog.Params();
@@ -65,7 +72,7 @@ public class TimezonePickerDialog extends Dialog {
                 }
             });
             final LoopView loopZone = (LoopView) view.findViewById(R.id.loop_zone);
-
+            loopZone.setTextSize(textSize);
             //修改优化边界值 by lmt 16/ 9 /12.禁用循环滑动,循环滑动有bug
             loopZone.setCyclic(false);
 //            List<String> data = d();

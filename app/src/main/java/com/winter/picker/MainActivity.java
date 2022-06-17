@@ -124,7 +124,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             zone = sb.toString();
         }
         TimezonePickerDialog.Builder builder = new TimezonePickerDialog.Builder(this)
-                .setsSlectValue(zone);
+                .setsSlectValue(zone)
+                .setTextSize(18f);
         timezoneDialog = builder.setOnTimeSelectedListener(new TimezonePickerDialog.OnTimeSelectedListener() {
             @Override
             public void onTimeSelected(String value) {
