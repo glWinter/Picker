@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button date;
     Button time;
     Button language;
-    private Dialog dateDialog, timeDialog, timezoneDialog,languageDialog;
+    private Dialog dateDialog, timeDialog, timezoneDialog, languageDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -141,13 +141,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         timezoneDialog.show();
     }
 
-    private void openLanguage(){
-        LanguageGuidePickerDialog.Builder builder =new LanguageGuidePickerDialog.Builder(this)
+    private void openLanguage() {
+        LanguageGuidePickerDialog.Builder builder = new LanguageGuidePickerDialog.Builder(this)
                 .setTextSize(18f);
         languageDialog = builder.setOnLanguageSelectedListener(new LanguageGuidePickerDialog.OnLanguageSelectedListener() {
             @Override
-            public void onLanguageSelected(String value) {
-                Toast.makeText(MainActivity.this, "value = "+value, Toast.LENGTH_SHORT).show();
+            public void onLanguageSelected(int index, String value) {
+                Toast.makeText(MainActivity.this, "index = " + index + ",value = " + value, Toast.LENGTH_SHORT).show();
             }
         }).create();
         languageDialog.show();

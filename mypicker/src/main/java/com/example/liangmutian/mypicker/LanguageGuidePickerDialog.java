@@ -15,7 +15,7 @@ import java.util.List;
 public class LanguageGuidePickerDialog extends Dialog {
 
     public interface OnLanguageSelectedListener {
-        void onLanguageSelected(String value);
+        void onLanguageSelected(int index,String value);
     }
 
 
@@ -59,7 +59,9 @@ public class LanguageGuidePickerDialog extends Dialog {
         private String getCurrDateValues() {
             return params.loopZone.getCurrentItemValue();
         }
-
+        private int getCurrDateIndex() {
+            return params.loopZone.getCurrentItem();
+        }
         public LanguageGuidePickerDialog create() {
             final LanguageGuidePickerDialog dialog = new LanguageGuidePickerDialog(context, params.shadow ? R.style.Theme_Light_NoTitle_Dialog : R.style.Theme_Light_NoTitle_NoShadow_Dialog);
             View view = LayoutInflater.from(context).inflate(R.layout.layout_picker_language_guide, null);
@@ -95,7 +97,7 @@ public class LanguageGuidePickerDialog extends Dialog {
                 @Override
                 public void onClick(View v) {
                     dialog.dismiss();
-                    params.callback.onLanguageSelected(getCurrDateValues());
+                    params.callback.onLanguageSelected(getCurrDateIndex(),getCurrDateValues());
                 }
             });
 
