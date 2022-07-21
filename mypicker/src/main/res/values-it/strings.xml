@@ -17,4 +17,5 @@
 	<string name="timepicker_title_default">impostato</string>
 	<string name="timepicker_year">anno</string>
 	<string name="timezonepicker_title">Fuso orario</string>
+	<string name="languagepicker_title">Language</string>
 </resources>

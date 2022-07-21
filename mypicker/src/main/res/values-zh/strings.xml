@@ -13,6 +13,7 @@
     <string name="timepicker_cancel">取消</string>
     <string name="timepicker_title_default">设置</string>
     <string name="timezonepicker_title">设置时区</string>
+    <string name="languagepicker_title">设置语言</string>
     <string name="fragment_settings_hi_bg_threshold">高血糖阈值</string>
     <string name="fragment_settings_lo_bg_threshold">低血糖阈值</string>
     <string name="next">下一步</string>

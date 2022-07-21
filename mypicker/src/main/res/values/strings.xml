@@ -12,6 +12,7 @@
     <string name="timepicker_cancel">Cancel</string>
     <string name="timepicker_title_default">set</string>
     <string name="timezonepicker_title">Timezone</string>
+    <string name="languagepicker_title">Language</string>
     <string name="fragment_settings_hi_bg_threshold">Hi BG Threshold</string>
     <string name="fragment_settings_lo_bg_threshold">Lo BG Threshold</string>
     <string name="next">Next</string>
@@ -43,5 +44,14 @@
         <item>Sydney(GMT+10:00)</item>
         <item>Noumea(GMT+11:00)</item>
         <item>Wellington(GMT+12:00)</item>
+    </string-array>
+
+    <string-array name="language_array">
+        <item>中文</item>
+        <item>English</item>
+        <item>italiano</item>
+        <item>العربية</item>
+        <item>русский язык</item>
+        <item>español</item>
     </string-array>
 </resources>

@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.liangmutian.mypicker.DatePickerDialog;
+import com.example.liangmutian.mypicker.LanguageGuidePickerDialog;
 import com.example.liangmutian.mypicker.TimePickerDialog;
 import com.example.liangmutian.mypicker.TimezonePickerDialog;
 
@@ -24,7 +25,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button zone;
     Button date;
     Button time;
-    private Dialog dateDialog, timeDialog, timezoneDialog;
+    Button language;
+    private Dialog dateDialog, timeDialog, timezoneDialog,languageDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,10 +35,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         zone = findViewById(R.id.zone);
         date = findViewById(R.id.date);
         time = findViewById(R.id.time);
-
+        language = findViewById(R.id.language);
         zone.setOnClickListener(this);
         date.setOnClickListener(this);
         time.setOnClickListener(this);
+        language.setOnClickListener(this);
     }
 
     @Override
@@ -51,6 +54,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.time:
                 openTime();
                 break;
+            case R.id.language:
+                openLanguage();
             default:
                 break;
         }
@@ -134,6 +139,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }).create();
         timezoneDialog.show();
+    }
+
+    private void openLanguage(){
+        LanguageGuidePickerDialog.Builder builder =new LanguageGuidePickerDialog.Builder(this)
+                .setTextSize(18f);
+        languageDialog = builder.setOnLanguageSelectedListener(new LanguageGuidePickerDialog.OnLanguageSelectedListener() {
+            @Override
+            public void onLanguageSelected(String value) {
+                Toast.makeText(MainActivity.this, "value = "+value, Toast.LENGTH_SHORT).show();
+            }
+        }).create();
+        languageDialog.show();
     }
 
 
