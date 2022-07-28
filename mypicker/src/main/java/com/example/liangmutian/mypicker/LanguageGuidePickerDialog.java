@@ -41,9 +41,15 @@ public class LanguageGuidePickerDialog extends Dialog {
         private final LanguageGuidePickerDialog.Params params;
         private float textSize = 20f;
         private int animResId = 0;
+        private boolean needDismiss = true;
 
         public Builder setAnimResId(int resId) {
             this.animResId = resId;
+            return this;
+        }
+
+        public Builder setNeedDismiss(boolean needDismiss) {
+            this.needDismiss = needDismiss;
             return this;
         }
 
@@ -96,7 +102,9 @@ public class LanguageGuidePickerDialog extends Dialog {
             view.findViewById(R.id.tx_finish).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    dialog.dismiss();
+                    if (needDismiss) {
+                        dialog.dismiss();
+                    }
                     params.callback.onLanguageSelected(getCurrDateIndex(), getCurrDateValues());
                 }
             });
