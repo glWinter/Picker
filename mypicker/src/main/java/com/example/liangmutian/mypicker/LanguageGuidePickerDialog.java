@@ -15,7 +15,7 @@ import java.util.List;
 public class LanguageGuidePickerDialog extends Dialog {
 
     public interface OnLanguageSelectedListener {
-        void onLanguageSelected(int index,String value);
+        void onLanguageSelected(int index, String value);
     }
 
 
@@ -40,8 +40,14 @@ public class LanguageGuidePickerDialog extends Dialog {
         private String selectValue;
         private final LanguageGuidePickerDialog.Params params;
         private float textSize = 20f;
+        private int animResId = 0;
 
-        public Builder setTextSize(float textSize){
+        public Builder setAnimResId(int resId) {
+            this.animResId = resId;
+            return this;
+        }
+
+        public Builder setTextSize(float textSize) {
             this.textSize = textSize;
             return this;
         }
@@ -59,24 +65,19 @@ public class LanguageGuidePickerDialog extends Dialog {
         private String getCurrDateValues() {
             return params.loopZone.getCurrentItemValue();
         }
+
         private int getCurrDateIndex() {
             return params.loopZone.getCurrentItem();
         }
+
         public LanguageGuidePickerDialog create() {
             final LanguageGuidePickerDialog dialog = new LanguageGuidePickerDialog(context, params.shadow ? R.style.Theme_Light_NoTitle_Dialog : R.style.Theme_Light_NoTitle_NoShadow_Dialog);
             View view = LayoutInflater.from(context).inflate(R.layout.layout_picker_language_guide, null);
 
-//            view.findViewById(R.id.tv_cancel).setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//                    dialog.dismiss();
-//                }
-//            });
             final LoopView loopZone = (LoopView) view.findViewById(R.id.loop_language);
             loopZone.setTextSize(textSize);
             //修改优化边界值 by lmt 16/ 9 /12.禁用循环滑动,循环滑动有bug
             loopZone.setCyclic(false);
-//            List<String> data = d();
             List<String> data = Arrays.asList(context.getResources().getStringArray(R.array.language_array));
 
             loopZone.setArrayList(data);
@@ -87,7 +88,6 @@ public class LanguageGuidePickerDialog extends Dialog {
                         position = i;
                     }
                 }
-//                int position = data.indexOf(selectValue);
                 loopZone.setCurrentItem(position);
             } else {
                 loopZone.setCurrentItem(0);
@@ -97,7 +97,7 @@ public class LanguageGuidePickerDialog extends Dialog {
                 @Override
                 public void onClick(View v) {
                     dialog.dismiss();
-                    params.callback.onLanguageSelected(getCurrDateIndex(),getCurrDateValues());
+                    params.callback.onLanguageSelected(getCurrDateIndex(), getCurrDateValues());
                 }
             });
 
@@ -108,7 +108,9 @@ public class LanguageGuidePickerDialog extends Dialog {
             lp.height = WindowManager.LayoutParams.MATCH_PARENT;
             win.setAttributes(lp);
             win.setGravity(Gravity.CENTER);
-            win.setWindowAnimations(R.style.Animation_Bottom_Rising);
+            if (animResId != 0) {
+                win.setWindowAnimations(R.style.Animation_Bottom_Rising);
+            }
 
             dialog.setContentView(view);
             dialog.setCanceledOnTouchOutside(params.canCancel);
@@ -125,7 +127,6 @@ public class LanguageGuidePickerDialog extends Dialog {
             params.callback = onLanguageSelectedListener;
             return this;
         }
-
 
 
     }
