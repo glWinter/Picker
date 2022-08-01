@@ -2,6 +2,8 @@ package com.example.liangmutian.mypicker;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -42,9 +44,14 @@ public class LanguageGuidePickerDialog extends Dialog {
         private float textSize = 20f;
         private int animResId = 0;
         private boolean needDismiss = true;
-
+        private int paddingtop = 0;
         public Builder setAnimResId(int resId) {
             this.animResId = resId;
+            return this;
+        }
+
+        public Builder setPaddingTop(int top){
+            this.paddingtop = top;
             return this;
         }
 
@@ -77,7 +84,7 @@ public class LanguageGuidePickerDialog extends Dialog {
         }
 
         public LanguageGuidePickerDialog create() {
-            final LanguageGuidePickerDialog dialog = new LanguageGuidePickerDialog(context, params.shadow ? R.style.Theme_Light_NoTitle_Dialog : R.style.Theme_Light_NoTitle_NoShadow_Dialog);
+            final LanguageGuidePickerDialog dialog = new LanguageGuidePickerDialog(context,  R.style.Theme_Light_NoTitle_NoShadow_Dialog);
             View view = LayoutInflater.from(context).inflate(R.layout.layout_picker_language_guide, null);
 
             final LoopView loopZone = (LoopView) view.findViewById(R.id.loop_language);
@@ -110,12 +117,13 @@ public class LanguageGuidePickerDialog extends Dialog {
             });
 
             Window win = dialog.getWindow();
-            win.getDecorView().setPadding(0, 0, 0, 0);
+            win.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#00000000")));
+            win.getDecorView().setPadding(0, paddingtop, 0, 0);
             WindowManager.LayoutParams lp = win.getAttributes();
             lp.width = WindowManager.LayoutParams.MATCH_PARENT;
             lp.height = WindowManager.LayoutParams.MATCH_PARENT;
             win.setAttributes(lp);
-            win.setGravity(Gravity.CENTER);
+            win.setGravity(Gravity.BOTTOM);
             if (animResId != 0) {
                 win.setWindowAnimations(R.style.Animation_Bottom_Rising);
             }

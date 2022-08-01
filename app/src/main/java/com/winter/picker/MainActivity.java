@@ -143,6 +143,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void openLanguage() {
         LanguageGuidePickerDialog.Builder builder = new LanguageGuidePickerDialog.Builder(this)
+                .setPaddingTop(40)
                 .setTextSize(18f);
         languageDialog = builder.setOnLanguageSelectedListener(new LanguageGuidePickerDialog.OnLanguageSelectedListener() {
             @Override
